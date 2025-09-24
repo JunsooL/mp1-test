@@ -107,6 +107,8 @@ function closeModal() {
     document.body.style.overflow = 'auto'; 
 }
 
+//navbar
+
 function initializeNavbar() {
   const navbar = document.getElementById("navbar");
   const links = document.querySelectorAll("#navbar a");
