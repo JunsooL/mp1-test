@@ -4,10 +4,108 @@
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <title>MP1</title>
     </head>
+
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+        <nav id="navbar" class="navbar">
+            <ul>
+            <li><a href="#section1">HOME</a></li>
+            <li><a href="#section2">ABOUT</a></li>
+            <li><a href="#section3">ART</a></li>
+            <li><a href="#section4">FOOD</a></li>            
+            <li><a href="#section5">END</a></li>
+            </ul>
+        </nav>
+
+        <header id="section1"> DAVID'S PHOTOS </header>
+
+        <div class="body-1" id="section2">
+            <div class="header-card">
+                <h1 class="header-1"> Photo Dump</h1>
+            </div>
+            <p> Here are just some of the things that are saved on my Camera Roll from the past couple months. They mainly catergorized as two things: art and food. So here they are !  </p>
+        </div>
+
+        <div class="body-1" id="section3">
+            <div class="header-card">
+                <h1 class="header-1"> Art!! </h1>
+            </div>
+                <div class="slider">
+                    <button class="prev" onclick="prevSlide()">&#10094</button>
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="assets/diglett.jpg" alt="ookiitora">
+                            <img src="assets/lucario.jpg" alt="ookiitora">
+                            <img src="assets/psyducj.jpg" alt="ookiitora">
+                        </div>
+
+                        <div class="slide">
+                            <img src="assets/luffy.jpg" alt="kanji">
+                            <img src="assets/mihawk.jpg" alt="kanji">
+                            <img src="assets/goth.jpg" alt="kanji">
+                        </div>
+                        
+                        <div class="slide">
+                            <img src="assets/lucy.jpg" alt="kanji">
+                            <img src="assets/full.jpg" alt="kanji">
+                            <img src="assets/gon.jpg" alt="kanji">
+                        </div>
+                    </div>
+                    <button class="next" onclick="nextSlide()">&#10095</button> 
+                </div>
+        </div>
+
+        <div class="body-1" id="section4">
+            <div class="header-card">
+                <h1 class="header-1"> Food </h1>
+            </div>
+            <p> Some of the foods I love and have finished clean. I eat 2lbs a yogurt a day and at least 10oz of ground beef or chicken. My sweet treats consists of fruit or icecream. I love sushi too.</p>
+            <div class="food-container">
+                <img src="assets/yogurt.jpg">
+                <img src="assets/yogurt3.jpg">
+                <img src="assets/sushi2 before.jpg">
+                <img src="assets/sushi2 after.jpg">
+                <img src="assets/sushi1.jpg">
+                <img src="assets/beef1.jpg">
+                <img src="assets/beef2.jpg">
+                <img src="assets/sandwich before.jpg">
+                <img src="assets/sandwich after.jpg">
+                <img src="assets/fruit.jpg">     
+            </div>
+        </div>
+
+        <div class="body-2" id="section5">
+            <video autoplay muted loop playsinline class="vid-container">
+                <source src="assets/davebluntz.mp4" type="video/mp4">
+            </video>
+
+            <div class="content">
+                <div class="header-card">
+                    <h1 class="header-1"> End </h1>
+                </div>  
+                <p class="ending"> I didn't really have anything in mind for this project so sorry that it's a bit weird. Thank you for taking the time to look at it :).</p>
+            </div>
+        </div>
+
+
+    
+        <footer> FOOTER </footer>
+
+        <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-img" />
+            <div id="caption">
+                <p id="artist-credit"></p>
+                <div class="social-icons">
+                </div>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+  </body> 
 </html>
